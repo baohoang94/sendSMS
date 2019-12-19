@@ -151,7 +151,8 @@ $ch = curl_init();
 $headers = [
 	'Authorization: Basic ' . $basicAuth,
 	'x-client-id: ' .$x_client_id,
-    'Content-Type: application/json; charset=utf-8'
+    'Content-Type: application/json; charset=utf-8',
+    'Content-Length: 0'
 ];
 
 curl_setopt($ch, CURLOPT_URL, $tokenUrl);                                                                      
